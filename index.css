@@ -1,0 +1,97 @@
+:root {
+    --add: #1e90ff;
+    --update: #008000;
+    --delete: #FF0000;
+    --white: #fff;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1.title{
+  text-align: center;
+  padding-top: 30px; 
+  margin-bottom: 5rem; 
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--add);
+}
+
+.form_container{
+  margin-top: 20px;
+  width: 90vw;
+  border-radius: 10px;
+  height: 90vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input{
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+form button{
+  padding: 10px;
+  background-color: var(--update);
+  border-radius: 7px;
+  cursor: pointer;  
+}
+
+.add_div{
+  width: 100%;
+  padding: 10px 0px 0px 90px;
+}
+
+.add_div button{
+  padding: 8px;
+  background-color: var(--update);
+  color: var(white);
+  border-radius: 7px;
+  width: 7%;
+}
+
+.add_div button:hover{
+  background-color: var(--update);
+  cursor: pointer;
+}
+
+table{
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.create_form{
+  margin-bottom: 2rem;
+}
+
+.create_form, .update_form{
+  display: none;
+}
+
+table .edit{
+  background-color: var(--add);
+  color: var(--white);
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+table .delete{
+  background-color: var(--delete);
+  color: var(--white);
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+ 
